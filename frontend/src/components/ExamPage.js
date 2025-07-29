@@ -24,7 +24,7 @@ const ExamPage = () => {
             try {
                 const token = localStorage.getItem('token');
                 if (!token) return navigate('/login');
-                const response = await axios.get('http://localhost:5000/api/exams/questions', {
+                const response = await axios.get('https://online-examination-system-uje7.onrender.com/api/exams/questions', {
                     headers: { 'Authorization': `Bearer ${token}` }
                 });
                 const initializedQuestions = response.data.map(q => ({ ...q, userAnswer: null }));
