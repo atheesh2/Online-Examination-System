@@ -9,7 +9,7 @@ const AdminPanel = () => {
   useEffect(() => {
     const fetchResults = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/admin/results', {
+        const response = await axios.get('https://online-examination-system-uje7.onrender.com/api/admin/results', {
           headers: { 'Authorization': `Bearer ${localStorage.getItem('adminToken')}` }
         });
         setResults(response.data);
