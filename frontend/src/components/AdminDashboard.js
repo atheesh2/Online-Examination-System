@@ -12,7 +12,7 @@ const AdminDashboard = () => {
     const fetchResults = async () => {
       const token = localStorage.getItem('token');
       try {
-        const response = await axios.get('http://localhost:5000/api/admin/results', {
+        const response = await axios.get('https://online-examination-system-uje7.onrender.com/api/admin/results', {
           headers: {
             Authorization: `Bearer ${token}`,
           },
