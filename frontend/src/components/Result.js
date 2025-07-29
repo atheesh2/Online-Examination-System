@@ -8,7 +8,7 @@ const Results = () => {
   useEffect(() => {
     const fetchResults = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/results');
+        const response = await axios.get('https://online-examination-system-uje7.onrender.com/api/results');
         setResults(response.data);
       } catch (err) {
         console.error('Error fetching results:', err);
