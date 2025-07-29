@@ -1,0 +1,30 @@
+/* Global layout setup */
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+
+}
+
+/* Specific app card layout (if used elsewhere) */
+.App {
+  text-align: center;
+  background-color: #a60909;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin: auto;
+}
+
+/* Button style shared across */
+button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}

@@ -1,0 +1,37 @@
+/* Timer container */
+.timer-container {
+    background-color: #f5f5ff; /* Softer background to match ZapQuizy theme */
+    border: 2px solid #6a1b9a; /* Purple border */
+    color: #4a148c; /* Darker purple text */
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 24px;
+    border-radius: 12px;
+    width: fit-content;
+    margin: 20px auto;
+    box-shadow: 0 4px 12px rgba(106, 27, 154, 0.2);
+    text-align: center;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* When time is low */
+.timer-container.low-time {
+    background-color: #fff3f3;
+    color: #d32f2f;
+    border-color: #d32f2f;
+    animation: pulse 1s infinite;
+}
+
+/* Pulse animation */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.07);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
